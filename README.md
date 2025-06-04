@@ -16,3 +16,7 @@ Este projeto é um CRUD simples (Create, Read, Update, Delete) desenvolvido com 
 - CSS3
 - JavaScript
 - LocalStorage (para armazenamento local dos dados)
+
+
+
+https://app.netlify.com/teams/luizbrites/projects
