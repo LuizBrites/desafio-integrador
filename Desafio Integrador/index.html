@@ -1,0 +1,50 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panificadora Central - Gerenciamento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="imagens/logo.jpg" alt="Logo da Panificadora Central" class="logo">
+    <h1>Panificadora Central</h1>
+  </header>
+
+  <main class="container">
+    <section class="cadastro">
+      <h2>Gerenciamento de Produtos</h2>
+      <form id="produtoForm" aria-label="Formulário de Produto">
+        <input type="text" name="nome" id="nome" placeholder="Nome do produto" aria-label="Nome do produto" required>
+        <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" aria-label="Quantidade" required min="0">
+        <input type="number" name="preco" id="preco" placeholder="Preço" aria-label="Preço" required min="0" step="0.01">
+        <button type="submit" id="submitBtn">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="estoque" aria-label="Relatório de Estoque">
+      <h2>Estoque Atual</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaProdutos">
+          <tr><td colspan="4">Nenhum produto cadastrado.</td></tr>
+        </tbody>
+      </table>
+      <p id="valorTotal">Valor total do estoque: R$ 0.00</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Panificadora Central. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
